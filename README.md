@@ -5,7 +5,27 @@ A variant of the 1.3 version available on the Hak5 GitHub
 
 Usage:
 
-Don't download the quickcreds module using the LAN Turtle text "GUI" menu system. Download this quickcreds file and place it in /etc/turtle/modules and when that is done, enter the LAN Turtle text "GUI" and configure the module and enable it. Then start using it.
+Don't download the quickcreds module using the LAN Turtle text "GUI" menu system. Download/copy the quickcreds file in this repo and place it in /etc/turtle/modules and when that is done, enter the LAN Turtle text "GUI" and configure the module and enable it. Then start using it.
+
+- Note! First make sure that you haven't got any other junk on the LAN Turtle, it's very limited when it comes to storage, the best thing is to start fresh
+- Connect to the LAN Turtle using ssh
+- Enter the Modules menu in the LAN Turtle text "GUI"
+- If another variant of quickcreds is already available in the system, then make sure that it's stopped and disabled
+- Exit to the terminal/shell
+- Navigate to /etc/turtle/modules
+- If there is a quickcreds file there, then delete it (or save it elsewhere if you think that you have some special variant that needs to be backed up)
+- Create a new quickcreds file using nano (or whatever editor that fits your needs and desires); nano quickcreds
+- Copy (raw copy) and paste the contents of the quickcreds file (available in this GitHub repo) and save/exit the file (it's of course also possible to scp the file there instead of doing copy/paste)
+- Make the file executable; chmod +x quickcreds
+- Head one step up in the file system/directory tree (i.e. to /etc/turtle )
+- Remove any existing Responder instance; rm -r /etc/turtle/Responder
+- If you haven't already, make sure the LAN Turtle has an active and working internet connection
+- Now start the LAN Turtle text "GUI" again; turtle
+- Enter Modules
+- quickcreds should now be listed there, highlight it in the menu system and hit enter
+- Select "Configure" and hit enter
+- Hit enter (as the default value "Yes" is already selected)
+- Wait for a while as the configuration is finished (takes a while to download dependencies and install them using opkg as well as getting Responder)
 
 ---
 
