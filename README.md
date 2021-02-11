@@ -1,9 +1,9 @@
 # LANTurtleQuickCredsVariant
 A variant of the 1.3 version available on the Hak5 GitHub
 
-Changes made compared to the "official" Hak5 1.3 version that was available Feb 2021 on Hak5 GitHub
+Main changes made compared to the "official" Hak5 1.3 version that was available Feb 2021 on Hak5 GitHub
 
-- Changing to a more consistent way of intending the script code so that it will be easy to read and follow
+- Changing to a more consistent way of indenting the script code so that it will be easy to read and follow
 
 - Moving the function "finished" above the function "start", since "start" calls for "finished" (bash basics to have modules called from within the same script before it's being called...)
 
@@ -45,3 +45,4 @@ Changes made compared to the "official" Hak5 1.3 version that was available Feb 
 Comments in general:
 - Doesn't capture creds for users on the same PC that isn't currently logged in (pretty logic though)
 - Doesn't work if the current user is logged in with a Microsoft account (i.e. an online account)
+- You can "fool" the same Windows box only once, or... it's at least a lot more difficult and time consuming to try a second time
