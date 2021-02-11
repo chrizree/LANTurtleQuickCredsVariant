@@ -1,7 +1,15 @@
 # LANTurtleQuickCredsVariant
 A variant of the 1.3 version available on the Hak5 GitHub
 
-Main changes made compared to the "official" Hak5 1.3 version that was available Feb 2021 on Hak5 GitHub
+---
+
+Usage:
+
+Don't download the quickcreds module using the LAN Turtle text "GUI" menu system. Download this quickcreds file and place it in /etc/turtle/modules and when that is done, enter the LAN Turtle text "GUI" and configure the module and enable it. Then start using it.
+
+---
+
+Main changes made compared to the "official" Hak5 1.3 version that was available Feb 2021 on Hak5 GitHub:
 
 - Using a more consistent way of indenting the script code so that it will be easy to read and follow
 
