@@ -1,13 +1,15 @@
 # LANTurtleQuickCredsVariant
 A variant of the 1.3 version available on the Hak5 GitHub
 
+NOTE! For anyone that has found this, it's still WIP, not ready for release yet...
+
 ---
 
 Usage:
 
 Don't download the quickcreds module using the LAN Turtle text "GUI" menu system. Download/copy the quickcreds file in this repo and place it in /etc/turtle/modules and when that is done, enter the LAN Turtle text "GUI" and configure the module and enable it. Then start using it.
 
-- Note! First make sure that you haven't got any other junk on the LAN Turtle, it's very limited when it comes to storage, the best thing is to start fresh
+- Note! First make sure that you haven't got any other junk on the LAN Turtle, it's very limited when it comes to storage, the best thing is to start fresh, with a newly flashed 6.2 image, overlay has 1.3M free and it will be needed
 - Connect to the LAN Turtle using ssh
 - Enter the Modules menu in the LAN Turtle text "GUI"
 - If another variant of quickcreds is already available in the system, then make sure that it's stopped and disabled
@@ -45,7 +47,7 @@ Main changes made compared to the "official" Hak5 1.3 version that was available
 
 - Being a bit more consistent when it comes to the if statements used (some are double square brackets, some not, some semicolon missing before "then"...), bash provides a more modern way than just using single brackets
 
-- Changed the script so that it supports both Turtles with orange/amber and yellow LEDs (don't have a Turtle with a yellow LED, so not tested and verified)
+- Changed the script so that it supports both Turtles with orange/amber and yellow LEDs. LED "yellow" is at least used on older version of the LAN Turtle firmware, if you do a factory reset with recovery firmware (version 5), then yellow is the LED used. When upgrading to 6.2 (latest as of Feb 2021), then it changes to orange/amber
 
 - Since the latest versions of Responder are larger in size, the archive has also gotten bigger. Because of that the zip is downloaded to /tmp first which
   has more storage, then removing exe files not needed and after that moving Responder to the correct location under /etc/turtle
