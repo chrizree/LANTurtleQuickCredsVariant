@@ -1,7 +1,8 @@
 # LANTurtleQuickCredsVariant
 A variant of the 1.3 version available on the Hak5 GitHub
 
-NOTE! For anyone that has found this, it's still WIP, not ready for release yet...
+IMPORTANT NOTE! This is unfinished work. It was all done and when verifying it from scratch, a new release of Responder had been made available that blew the roof of the LAN Turtle available storage. I've "trimmed" Responder once already and I'm not doing it again. I got fed up with the lack of storage on the LAN Turtle at this point and decided to not take it any further. I'm using other Hak5 devices or a Raspberry Pi Zero (dedicated or using P4wnP1) instead. Leaving the code here though if someone finds something useful.
+
 
 ---
 
